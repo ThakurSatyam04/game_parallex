@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 13px;
+}
+
+.container{
+    position:relative;
+    height: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform-style:preserve-3d;
+    z-index: -1;
+
+}
+
+.background{
+    transform: translateZ(-80px) scale(7.5);
+}
+
+.foreground{
+    transform: translateZ(-30px) scale(4);
+    /* opacity: 0.5; */
+}
+
+
+.background, .foreground{
+    position: absolute;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    background-color:#738ea7d9;
+
+}
+
+.first_heading{
+    position: relative;
+    /* top: 5rem; */
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(250 129 172);
+    font-size: 3rem;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.main{
+    background-color: rgba(13, 74, 94, 0.953);
+    color:rgb(247, 244, 244);
+    /* padding:5rem 0; */
+}
+.sec1{
+    background-color: rgba(13, 74, 94, 0.953);
+    color:rgb(247, 244, 244);
+    padding:1rem 0;
+}
+
+
+.sec_heading {
+    /* color: white; */
+    font-size: 4rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+    text-decoration:underline;
+    color: rgba(201, 196, 89, 0.651);
+}
+
+.para1{
+    font-size: 1.5rem;
+    font-family: 'verela Round';
+    /* padding: 0 5rem; */
+    /* margin: 5rem 0; */
+
+}
+
+.sec2{
+    background-color: rgba(77, 78, 52, 0.845);
+    color:rgb(247, 244, 244);
+    padding:1rem 0;
+}
+
+.sec3{
+    background-color: rgba(61, 60, 59, 0.769);
+    color:rgb(247, 244, 244);
+    padding:1rem 0;    
+}
+
+.sec4{
+    background-color: rgba(63, 50, 70, 0.953);
+    color:rgb(247, 244, 244);
+    padding:1rem 0;
+}
+
+.gta{
+    color: rgb(111, 218, 122);
+    font-size: 3rem;
+    text-decoration: underline;
+    margin: 2rem 3rem; 
+}
+
+.coc{
+    color: rgb(194, 160, 36);
+    font-size: 3rem;
+    text-decoration: underline;
+    margin: 2rem 3rem; 
+}
+
+.text {
+    font-size: 1.2rem;
+    /* padding: 0 10rem;*/
+    margin: 2rem 3rem; 
+    /* font-family: 'verela Round'; */
+    /* font-family: 'verela Round',sans-serif; */
+}
+
+.text_size{
+    font-size: 3rem;
+    color: #439aee;
+    /* font-weight: 500; */
+    text-decoration: underline;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.desc{
+    position: absolute;
+    background-color: aliceblue;
+    color: black;
+    font-size: 3rem;
+    font-weight: 500;
+    top: 50%;
+    left: 50%;
+    font-size:3rem;
+    transform: translateX(-50%);
+    padding: 0 13px;
+}
+
+.desc:hover{
+    cursor: pointer;
+}
+
+footer{
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.bg1{
+    background-image: url(/img1.jpg);
+}
+.bg2{
+    background-image: url(/img2.jpg);
+}
+.bg3{
+    background-image: url(/img3.jpg);
+}
